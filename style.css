@@ -215,3 +215,34 @@ body {
     padding: 20px 20px;
     color: #2e0435;
 }
+
+.trainings {
+    height: 100vh;
+    padding: 3rem 0;
+}
+
+.grey-area {
+    height: 40vh;
+    background: #707070;
+    padding: 0 3rem;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.courses {
+    position: absolute;
+    bottom: -100px;
+    
+}
+
+.course-width {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    background: #707070;
+    height: 50vh;
+}
