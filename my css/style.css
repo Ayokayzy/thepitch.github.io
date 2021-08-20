@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/*=========Variable deffine===========*/
+:root {
+    --primary-color: #7b2cbf;
+    --secondary-color: #10002b;
+    --third-color: #f72585;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color:#000;
+    --primary-font: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/*
+===============================
+custom scrollbar
+===============================
+*/
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+/*
+===============================
+custom css design
+===============================
+*/
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--white-color);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 0.625rem  1.875rem;
+    line-height: 1.5625rem;
+    background: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0 2px 10px -1px rgb(0 0 0 / 19%);
+    transition: all .4sec ease-out 0s;
+}
+
+.main-button:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.wrapper {
+    padding: 8.25rem 0;
+}
+
+.text-content {
+    width: 70%;
+    margin: auto;
+}
+
+
+
+
+/*Nav area*/
+.navbar-brand img {
+    height: 3.875rem;
+}
+
+.nav-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.nav-wrap .nav-item {
+    padding: 0 0.65rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white-color);
+    letter-spacing: 1px;
+}
+
+.fa-stream {
+    color: var(--white-color);
+    width: 2rem;
+    height: 2rem;
+}
+
+/*--- Change atyling onn scroll ---*/
+.nav-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--primary-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
+    transition: all .15sec ease-in-out 0s;
+}
+
+/*
+===============================
+Top Banner Design
+===============================
+*/
+
+.top-banner {
+    width: 100%;
+    background: url(../img/home-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+}
+
+/*
+===============================
+About us design
+===============================
+*/
+.about-us {
+    padding: 0 0 5.375rem;
+    background: var(--primary-color);
+}
+
+/*--- counter section --*/
+
+.counter-section {
+    margin: 10rem 0 0;
+    background: var(--primary-color);
+    padding: 1.575rem 0;
+}
+
+.counter-section p {
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+
+/*team section*/
+.item-box img {
+    width: 100%;
+}
+
+.butt {
+    color: var(--text-color);
+}
+
+
+/*
+===============================
+what we do design
+===============================
+*/
+.we-provide {
+    background: var(--primary-color);
+    /* height: 40vh; */
+}
+
+.we-provide .row {
+    /* height: 65vh; */
+    padding: 5px;
+}
+
+.image-holder {
+    background: url(../img/a3185cb3d7b5c8b11779dc4903df7c8c.jpg) no-repeat center;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.content-area-os {
+    background: white;
+    width: 100%;
+}
+
+.heading-os {
+    box-shadow: -1px 1px 5px black ;
+    background: var(--white-color);
+    border: 1px solid grey;
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 20px 20px;
+}
+
+/*
+===============================
+our training design
+===============================
+*/
+
+.training {
+    background: url(../img/home-bg.jpg) no-repeat center;
+    background-size: 100%;
+    padding: 10rem 0;
+}
+
+.training-carousel {
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.carousel-indicators {
+    /* position: relative; */
+    top: auto;
+    left: 0;
+    bottom: -70px;
+    height: 30px;
+    
+}
+
+.carousel-indicators .li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--text-color);
+}
+
+.carousel-indicators .active {
+    background: var(--primary-color);
+}
+
+.footer {
+    margin-top: 20rem;
+    color: var(--text-gray);
+    padding: 10rem 5rem;
+}
+

@@ -1,0 +1,105 @@
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 991px) {
+/*-- custom classes --*/
+    .text-content {
+        width: 100%;
+    }
+
+/*-- navbar brand --*/
+    .nav-wrap .navbar-brand img {
+        height: 3.8125rem;
+    }
+
+    .nav-wrap{
+        text-align: center;
+        background: var(--secondary-color);
+    }
+
+    .nav-wrap .nav-link {
+        line-height: 1.875rem;
+    }
+
+/*-- banner design --*/
+    .top-banner {
+        padding: 9.375rem 0;
+    }
+
+/*=== About us design ===*/
+    .position-absolute {
+        top: 25rem !important;
+    }
+
+    .counter-section {
+        margin: 30rem 0 0;
+    }
+
+/* Team Section */
+    .carousel-control-next {
+        top: 100% !important;
+        left: 55% !important;
+    }
+    .carousel-control-prev {
+        top: 100% !important;
+        left: 45% !important;
+    }
+}
+
+/*footer section*/
+.footer {
+    margin-top: 20rem;
+}
+
+@media (max-width: 768px) {
+/*-- custom classes --*/
+    h1{
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.0625rem;
+    }
+
+    /*=== About us design ===*/
+    .position-absolute {
+        top: 29rem !important;
+    }
+
+    /* Team Section */
+    .carousel-control-next {
+        top: 100% !important;
+        left: 55% !important;
+    }
+    .carousel-control-prev {
+        top: 100% !important;
+        left: 45% !important;
+    }
+    /*footer section*/
+    .footer {
+        margin-top: 23rem;
+    }
+}
+
+@media (max-width: 351px) {
+/*=== About us design ===*/
+    .position-absolute {
+        top: 32rem !important;
+    }
+
+    .counter-section {
+        margin: 36rem 0 0;
+    }
+
+    /* Team Section */
+    .carousel-control-next {
+        top: 100% !important;
+        left: 55% !important;
+    }
+    .carousel-control-prev {
+        top: 100% !important;
+        left: 45% !important;
+    }
+}
