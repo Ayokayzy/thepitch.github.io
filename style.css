@@ -34,14 +34,10 @@ body {
     margin-right: 3rem;
 }
 
-.wide {
-    padding: 0;
-}
-
 .home-background {
     background-image: url(./img/home-bg.jpg);
-    background-size: 100vw;
-    height: 100vh;
+    background-size: cover;
+    height: 100%;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -54,30 +50,23 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, .1)!important;
-}
-.home-background h1 p {
-    z-index: 2;
+    background: rgba(0, 0, 0, .4)!important;
 }
 
 .text {
     text-transform: capitalize;
 }
 
+
 .about {
-    position: relative;
-    height: 35vh !important;
+    height: 35vh;
     background: #2e0435;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 0 3rem;
 }
 
 .about-us {
-    height: 100vh;
-    padding: 0;
-    position: relative;
-
-    
+    height: 100%;
 }
 
 .about-us h1{
@@ -90,8 +79,6 @@ body {
 }
 
 .about-item {
-    position: absolute;
-    height: 30vh;
     top: 8rem;
     padding: 0 6rem;
     width: 100%;
@@ -107,7 +94,6 @@ body {
 }
 
 .numbers {
-    position: absolute;
     height: 15vh;
     padding: 0 3rem;
     bottom: 1.5rem;
@@ -129,7 +115,6 @@ body {
 .team {
     padding: 6rem 3rem;
     height: 100vh;
-    /* background: hotpink; */
 }
 
 .show-team {
@@ -153,23 +138,6 @@ body {
 
 .item-box {
     color: white;
-}
-
-.carousel-control-prev {
-    /* position: absolute; */
-    left: 0px;
-    bottom: -180px;
-    width: auto;
-    /* width: 0px; */
-    /* background: white;
-    height: 50px;
-    border-radius: 50%; */
-}
-
-.carousel-control-next {
-    right: 0px;
-    bottom: -180px;
-    width: auto;
 }
 
 .what-we-do {
@@ -243,6 +211,31 @@ body {
 }
 
 .footer {
-    background: #707070;
-    height: 50vh;
+    background: #1A1A1A;
+    /* height: 50vh; */
+    padding: 10% 0;
+    /* color: #fff; */
+}
+
+.box {
+    width: 20%;
+    padding: 10px;
+    text-transform: capitalize;
+    color: #fff;
+    
+}
+
+.box h4 {
+    margin-bottom: 20px;
+}
+
+
+li {
+    list-style: none;
+    font-size: small;
+    padding: 10px 0;
+}
+
+ul {
+    padding-left: 0;
 }
