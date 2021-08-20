@@ -1,5 +1,12 @@
 @media (max-width: 1024px) {
+/*footer section*/
+    .footer p, .footer li {
+    font-size: 0.8rem;
+    }
 
+    .footer h4 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -68,6 +75,10 @@
         top: 29rem !important;
     }
 
+    .counter-section {
+        margin: 37rem 0 0;
+    }
+
     /* Team Section */
     .carousel-control-next {
         top: 100% !important;
@@ -77,20 +88,72 @@
         top: 100% !important;
         left: 45% !important;
     }
+/*training section*/
+    .carousel-indicators {
+        /* position: relative; */
+        /* top: auto;
+        left: 0; */
+        bottom: -70px;
+        /* height: 30px; */
+        
+    }
+
     /*footer section*/
     .footer {
-        margin-top: 23rem;
+        margin-top: 27rem;
     }
 }
 
-@media (max-width: 351px) {
+@media (max-width: 414px) {
 /*=== About us design ===*/
     .position-absolute {
-        top: 32rem !important;
+        top: 35rem !important;
     }
 
     .counter-section {
-        margin: 36rem 0 0;
+        margin: 42rem 0 0;
+    }
+
+    /* Team Section */
+    .carousel-control-next {
+        top: 100% !important;
+        left: 55% !important;
+    }
+    .carousel-control-prev {
+        top: 100% !important;
+        left: 45% !important;
+    }
+}
+
+@media (max-width: 375px) {
+/*=== About us design ===*/
+    .position-absolute {
+        top: 35rem !important;
+    }
+
+    .counter-section {
+        margin: 42rem 0 0;
+    }
+
+    /* Team Section */
+    .carousel-control-next {
+        top: 100% !important;
+        left: 55% !important;
+    }
+    .carousel-control-prev {
+        top: 100% !important;
+        left: 45% !important;
+    }
+}
+
+    @media (max-width: 320px) {
+/*=== About us design ===*/
+    .position-absolute {
+        top: 40rem !important;
+    }
+
+    .counter-section {
+        margin: 47rem 0 0;
     }
 
     /* Team Section */

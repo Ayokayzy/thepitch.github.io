@@ -202,6 +202,12 @@ About us design
     background: var(--primary-color);
 }
 
+.fa-user-tie, .fa-clipboard-list {
+font-size: 60px;
+margin: 0.675rem 0;
+color: var(--secondary-color);
+}
+
 /*--- counter section --*/
 
 .counter-section {
@@ -285,15 +291,13 @@ our training design
     top: auto;
     left: 0;
     bottom: -70px;
-    height: 30px;
+    /* height: 30px; */
     
 }
 
-.carousel-indicators .li {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: var(--text-color);
+fa-circle {
+    font-size: 10px;
+    color: var(--text-color);
 }
 
 .carousel-indicators .active {
