@@ -18,7 +18,8 @@
 
 a,
 a:hover {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: var(--white-color);
 }
 
 a:hover {
@@ -28,14 +29,19 @@ a:hover {
 ul,
 ol {
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 5px;
 }
 
 /*=========Variable deffine===========*/
 :root {
-    --primary-color: #7b2cbf;
-    --secondary-color: #10002b;
-    --third-color: #f72585;
+    --primary-color: #000000;
+    --secondary-color: #990099;
+    --third-color: #fafafa;
     --white-color: #fff;
     --text-color: #555;
     --text-gray: #999;
@@ -78,16 +84,36 @@ custom css design
 */
 
 h1 {
-    font-size: 3rem;
+    font-size: 60px;
     font-weight: 900;
     margin-bottom: 3rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 h2 {
     font-weight: 700;
-    font-size: 2.25rem;
-    color: var(--white-color);
+    font-size: 50.5px;
+    color: var(--primary-color);
+}
+h3 {
+    font-weight: 700;
+    font-size: 39.7px;
+    /* color: var(--primary-color); */
+}
+h4 {
+    font-weight: 700;
+    font-size: 28.4px;
+    /* color: var(--primary-color); */
+}
+h5 {
+    font-weight: 700;
+    font-size: 21.32px;
+    color: var(--primary-color);
+}
+h5 {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--primary-color);
 }
 
 p {
@@ -98,23 +124,37 @@ p {
     letter-spacing: 1px;
 }
 
+.tagline {
+    font-size: 21.32px;
+    color: var(--text-gray);
+}
+
 .main-button {
     display: inline-block;
-    padding: 0.625rem  1.875rem;
+    padding: 0.325rem  1.875rem;
     line-height: 1.5625rem;
-    background: var(--primary-color);
-    border: 0.1875rem solid var(--primary-color);
+    background: var(--secondary-color);
+    border: 0.1875rem solid var(--secondary-color);
     color: var(--white-color);
     font-size: 0.9375rem;
     font-weight: 600;
     text-transform: capitalize;
     box-shadow: 0 2px 10px -1px rgb(0 0 0 / 19%);
     transition: all .4sec ease-out 0s;
+    border-radius: 5px;
 }
 
 .main-button:hover {
     background: transparent;
     color: var(--primary-color);
+}
+
+.input {
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    height: 35px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .wrapper {
@@ -131,8 +171,12 @@ p {
 
 /*Nav area*/
 .navbar-brand img {
-    height: 3.875rem;
+    height: 2.575rem;
 }
+
+/* .bg-dark {
+    background: var(--black-color) !important;
+} */
 
 .nav-wrap {
     position: fixed;
@@ -147,6 +191,11 @@ p {
     padding: 0 0.65rem;
     transition: all 200ms linear;
 }
+
+/* .dropdown-menu {
+    background: var(--secondary-color);
+    text-align: center;
+} */
 
 .navbar-toggler:focus {
     outline: unset;
@@ -175,7 +224,7 @@ p {
     left: 0;
     width: 100%;
     background: var(--primary-color);
-    box-shadow: 0 0.125rem 1.125rem 0 rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
     transition: all .15sec ease-in-out 0s;
 }
 
@@ -187,10 +236,329 @@ Top Banner Design
 
 .top-banner {
     width: 100%;
-    background: url(../img/home-bg.jpg) no-repeat center;
+    background: url(../img/bg.jpg) no-repeat center;
     background-size: cover;
-    padding: 16.875rem 0 9.375rem;
+    padding: 13.875rem 0 9.375rem 8.875rem;
 }
+
+.banner-text {
+    width: 400px;
+}
+
+
+/*
+===============================
+Our-works Section Design
+===============================
+*/
+#our-works {
+    background: var(--third-color);
+}
+
+.our-works {
+    padding: 0.987rem 0 0.589rem;
+}
+
+.column-card {
+    padding: 10px;
+    border-radius: 15px;
+    transition: all .05sec ease-out .02s;
+    height: 120px;
+    overflow: hidden;
+    width: 200px;
+    margin-bottom: 100px;
+}
+
+.column-card:hover {
+    box-shadow: 5px 5px 0px 1px var(--text-color);
+    height: auto;
+    border-radius: 2;
+}
+
+
+
+/*
+===============================
+Sponsors Section Design
+===============================
+*/
+#sponsors {
+    padding: 1.987rem 0 1.589rem;
+    background: var(--primary-color );
+    border-radius: 5px;
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    background: var(--third-color);
+    border-radius: 5px;
+}
+
+
+/*
+===============================
+Need-us section design
+===============================
+*/
+#need-us {
+    padding: 2rem 0;
+}
+
+#need-us h1 {
+    color: var(--secondary-color);
+}
+#need-us p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.idea {
+    background: #f7f7f7;
+    padding: 2rem 0;
+}
+
+/*
+===============================
+Reach-us section design
+===============================
+*/
+#reach-us {
+    background: url(/img/happy-bearded-young-man.jpg) no-repeat top left;
+    background-size: 70%;
+    background-color: #FDA437;
+    padding: 5rem 0;
+}
+
+
+/*
+===============================
+Footer section design
+===============================
+*/
+#footer {
+    background: var(--primary-color);
+    padding: 3.875rem 2rem 2rem 2rem;
+}
+
+
+
+
+
+
+/*
+===============================
+Contact us page design
+===============================
+*/
+.contact-banner {
+    width: 100%;
+    background: url(../img/contact-banner.jpg) no-repeat center;
+    background-size: cover;
+    padding: 13.875rem 0 9.375rem 0rem;
+}
+
+#contact-body {
+    padding: 20px 0;
+}
+
+.text-area {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.contact-form {
+    padding: 10px 15px;
+    /* border: 1px solid var(--secondary-color); */
+    width: 400px;
+    margin: 0 0 150px;
+    border-radius: 5px;
+    /* box-shadow: 0 0 2px 1px var(--secondary-color); */
+}
+
+.input, .text-area {
+    background: none;
+    /* width: 200px; */
+}
+
+.map-div {
+    width: 100%;
+    height: 50vh;
+    background: var(--text-gray);
+    /* box-shadow: 0 0 2px 1px var(--primary-color); */
+}
+
+#socials {
+    /* border: 1px solid var(--secondary-color); */
+    /* background: var(--text-gray); */
+    width: auto;
+}
+
+#socials .col-md-6 a {
+    padding: 5px;
+    /* background: #fafafa; */
+    /* margin: 5px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--primary-color);
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+}
+
+#socials i {
+    color: var(--secondary-color);
+    font-size: 37px;
+}
+
+
+
+/*
+===============================
+About us page design
+===============================
+*/
+.about-banner {
+    width: 100%;
+    background: url(../img/about-banner.jpg) no-repeat center;
+    background-size: cover;
+    padding: 13.875rem 0 9.375rem 0rem;
+}
+
+.title-head {
+    width: 100%;
+    padding: 20px 30px;
+    background: var(--black-color);
+    color: var(--white-color);
+    margin: 15px 0;
+}
+
+#about-body p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 18px
+}
+
+.team-image-b, .team-image-md, .team-image-sm {
+    background: var(--text-gray);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.team-image-b {
+    width: 300px;
+    height: 300px;
+}
+
+.team-image-md {
+    width: 200px;
+    height: 200px;
+}
+
+.team-image-sm {
+    width: 100px;
+    height: 100px;
+}
+
+/*
+===============================
+pitchworks page design
+===============================
+*/
+
+.pitchworks-banner {
+    width: 100%;
+    background: url(../img/pitchworks-banner.jpg) no-repeat center;
+    background-size: cover;
+    padding: 13.875rem 0 9.375rem 0rem;
+}
+
+.services-box {
+    width: 300px;
+    height: 300px;
+    background: var(--text-gray);
+}
+
+
+
+/*
+===============================
+pitchworks page design
+===============================
+*/
+.pitchtraining-banner {
+    width: 100%;
+    background: url(../img/pitchtraining-banner.jpg) no-repeat center;
+    background-size: cover;
+    padding: 18.875rem 0 4.375rem 0rem;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-area {
+    height: 100px;
+    width: 100%;
+    background: var(--text-gray);
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.course-card {
+    width: 300px;
+    height: 330px;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 30px 30px;
+    overflow-y: hidden;
+}
+
+.course-card p {
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+.course-card:hover {
+    box-shadow: 0 0 10px var(--text-color);
+}
+
+
+/*
+===============================
+pitcexchange page design
+===============================
+*/
+.pitchexchange-banner {
+    width: 100%;
+    background: url(../img/pitchexchange-banner.jpg) no-repeat center;
+    background-size: cover;
+    padding: 12.875rem 0 8.375rem 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 ===============================
@@ -200,12 +568,6 @@ About us design
 .about-us {
     padding: 0 0 5.375rem;
     background: var(--primary-color);
-}
-
-.fa-user-tie, .fa-clipboard-list {
-font-size: 60px;
-margin: 0.675rem 0;
-color: var(--secondary-color);
 }
 
 /*--- counter section --*/
@@ -291,13 +653,15 @@ our training design
     top: auto;
     left: 0;
     bottom: -70px;
-    /* height: 30px; */
+    height: 30px;
     
 }
 
-fa-circle {
-    font-size: 10px;
-    color: var(--text-color);
+.carousel-indicators .li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--text-color);
 }
 
 .carousel-indicators .active {
@@ -305,7 +669,7 @@ fa-circle {
 }
 
 .footer {
-    margin-top: 10%;
+    margin-top: 20rem;
     color: var(--text-gray);
     padding: 10rem 5rem;
 }

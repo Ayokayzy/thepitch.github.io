@@ -4,550 +4,212 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Pitch Community</title>
-    <!--Bootstrap CDN-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/fontawesome.min.css"> -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-    <!--my css-->
-    <link rel="stylesheet" href="my css/style.css">
-    <link rel="stylesheet" href="my css/responsive-style.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="./my css/style.css">
+    <link rel="stylesheet" href="./my css/responsive-style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-    <!--Header design-->
-    <header>
-        <nav class="navbar navbar-expand-lg nav-wrap">
+    <section id="nav-area">
+        <nav class="navbar nav-wrap navbar-expand-lg navbar-dark bg-dark position-fixed opacity">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="./img/brand/brand-white.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-stream"></i>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse nav-item" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about-us">About Us</a>
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Business Tools
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="pitchexchange.html">Pitch Works</a></li>
+                                <li><a class="dropdown-item" href="pitchtraining.html">Pitch Trainings</a></li>
+                                <li><a class="dropdown-item" href="pitchexchange.html">Pitch Exchange</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#our-services">Our Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#trainings">Trainings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact-us">Contact Us</a>
+                            <a class="nav-link" href="contact us.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
-    <!--Section1 top-banner-->
-    <section id="home">
-        <div class="container-fluid px-0 top-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-6">
-                        <h1>The pitch community</h1>
-                        <p>Advocating Business Intelligence, Quality Service and Excellence.</p>
-                        <div class="mt-4">
-                            <button class="main-button">contact us</button>
-                        </div>
+    </section>
+    <section id="banner-area">
+        <div class="top-banner">
+            <div class="banner-text">
+                <h1>Your Business Can Thrive Better</h1>
+                <p class="tagline">We are a team of skilled professionals capable of handling your business to help you
+                    reach your goals
+                    faster.</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="our-works">
+        <div class="container our-works">
+            <div class="row gx-5">
+                <div class="col-md mb-3">
+                    <div class="column-card mx-auto">
+                        <h5>Creative Designs and Branding</h6>
+                            <p>we produce creative
+                                and beatiful graphics that will make your brand stand out</p>
                     </div>
+                </div>
+                <div class="col-md">
+                    <div class="column-card mx-auto">
+                        <h5>Business Management and Development</h5>
+                        <p>we produce creative
+                            and beatiful graphics that will make your brand stand out</p>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="column-card mx-auto">
+                        <h5>Social Marketing</h5>
+                        <p>we produce creative
+                            and beatiful graphics that will make your brand stand out</p>
+                    </div>
+                </div>
+                <div class="col-md mb-3">
+                    <div class="column-card mx-auto">
+                        <h5>Personal Development and Trainings</h5>
+                        <p>we produce creative
+                            and beatiful graphics that will make your brand stand out</p>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-    <!--Section2 about-us-->
-    <section id="about-us">
-        <div class="container-fluid px-0 about-us position-relative">
-            <div class="container py-4">
-                <h1>About The Pitch Community</h1>
-            </div>
-            <div class="container about-item position-absolute top-100 start-50 translate-middle">
-                <div class="row">
-                    <div class="col-lg-4 col-sm-12 pb-3">
-                        <div class="card shadow">
-                            <div class="text-center">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <h5 class="card-title">Our People</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make
-                                    up
-                                    the
-                                    bulk
-                                    of the card's content...<a href="#">Go somewhere</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 pb-3">
-                        <div class="card shadow">
-                            <div class="text-center">
-                                <i class="fas fa-clipboard-list"></i>
-                            </div>
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <h5 class="card-title">Our values</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make
-                                    up
-                                    the
-                                    bulk
-                                    of the card's content...<a href="#">Go somewhere</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 pb-3">
-                        <div class="card shadow">
-                            <div class="text-center">
-                                <i class="fas fa-clipboard-list"></i>
-                            </div>
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <h5 class="card-title">Our Objectives</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make
-                                    up
-                                    the
-                                    bulk
-                                    of the card's content...<a href="#">Go somewhere</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+    <section id="sponsors">
+        <div class="container sponsors">
+            <h3 class="text-center text-white mb-5">Our Other Brands</h3>
+            <div class="row gx-3">
+                <div class="col-sm text-center d-flex justify-content-center mb-5">
+                    <div class="logo-img p-1"><img src="/img/brand/pitchworks logo.png" alt="" width="100%"></div>
                 </div>
+                <div class="col-sm text-center d-flex justify-content-center mb-5">
+                    <div class="logo-img p-1 pt-3"><img src="/img/brand/tpex  new logo.png" alt="" width="100%"></div>
+                </div>
+                <div class="col-sm text-center d-flex justify-content-center mb-5">
+                    <div class="logo-img"><img src="/img/brand/PITCH LOGO NEW.png" alt="" width="100%"></div>
+                </div>
+                <!-- <div class="col-sm text-center d-flex justify-content-center mb-5">
+                    <div class="logo-img">4</div>
+                </div> -->
+
             </div>
         </div>
-        <section class="counter-section">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-                        <h2>
-                            <span id="count1"></span>+
-                        </h2>
-                        <p>our satisfied and happy customers</p>
-                    </div>
-                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-                        <h2>
-                            <span id="count2"></span>+
-                        </h2>
-                        <p>years of business experience</p>
-                    </div>
-                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-                        <h2>
-                            <span id="count3"></span>+
-                        </h2>
-                        <p>our qualified staffs</p>
-                    </div>
-                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-                        <h2>
-                            <span id="count4"></span>+
-                        </h2>
-                        <p>service points</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="team">
-            <div class="container">
-                <div class="row gx-5 py-3">
-                    <div class="col-md-4">
-                        <div class="team-img pt-5">
-                            <h1>we have an amazing team</h1>
-                        </div>
-                    </div>
-                    <div class="col-md-8 px-4">
-                        <div class="row team-slide position-relative">
-                            <div class="col-md-12 px-2 py-auto">
-                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="item-box bg-light text-color='success'">
-                                                        <div class="image-area"><img src="img/team/team1.png" alt="...">
-                                                        </div>
-                                                        <div class="text-area">
-                                                            <p>slide one</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="item-box bg-light">
-                                                        <div class="image-area"><img src="img/team/team2.png" alt="...">
-                                                        </div>
-                                                        <div class="text-area">
-                                                            <p>slide two</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="item-box bg-light">
-                                                        <div class="image-area"><img src="img/team/team2.png" alt="...">
-                                                        </div>
-                                                        <div class="text-area">
-                                                            <p>slide three</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="item-box bg-light">
-                                                        <div class="image-area"><img src="img/team/team1.png" alt="...">
-                                                        </div>
-                                                        <div class="text-area">
-                                                            <p>slide four</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <div class="item-box bg-light">
-                                                        <div class="image-area bg-light"><img src="img/team/team1.png"
-                                                                alt="...">
-                                                        </div>
-                                                        <div class="text-area">
-                                                            <p>slide five</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="item-box bg-light">
-                                                        <div class="image-area"><img src="img/team/team2.png" alt="...">
-                                                        </div>
-                                                        <div class="text-area">
-                                                            <p>slide six</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button
-                                class="carousel-control-prev position-absolute top-50 start-0 translate-middle butt-control"
-                                type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                <i class="fas fa-chevron-circle-left butt"></i>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button
-                                class="carousel-control-next position-absolute top-50 start-100 translate-middle butt-control"
-                                type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                <i class="fas fa-chevron-circle-right butt"></i>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
     </section>
-    <!--Section3 our-services-->
-    <section id="our-services">
-        <section class="our-service py-5">
-            <div class="container-fluid py-4">
-                <div class="container">
-                    <h1>what we do at the pitch community</h1>
+    <section id="need-us">
+        <h1 class="text-center mb-5">Why You May Need Us</h1>
+        <div class="container need-us">
+            <div class="row gx-5 mb-5">
+                <div class="col-md-5"><img src="/img/idea.jpg" alt="" width="90%" class="mx-auto"></div>
+                <div class="col-md-5">
+                    <h4>Idea, Product or process alone is not valuable without execution.</h4>
+                    <p>Statistics shows that only about 30% of start ups survive, the 70% have often come to the
+                        realization that intellectual property is not a competitive advantage, they strongly believe
+                        that their ideas are unique and innovative, only to realize that the idea, product or process
+                        aloni is not valuable without execution. Ideas even though unique, requires
+                        several rounds of customer interview, market survey, alalysis, product iterations before it
+                        becomes a finalized product for sale. This is where we come in.
+                    </p>
                 </div>
             </div>
-            <div class="container mx-auto">
-                <div class="row my-5">
-                    <div class="col-12">
-                        <div class="card mb-3 mx-auto" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="..." class="img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row my-5">
-                    <div class="col-12">
-                        <div class="card mb-3 mx-auto" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="..." class="img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row my-5">
-                    <div class="col-12">
-                        <div class="card mb-3 mx-auto" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="..." class="img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row my-5">
-                    <div class="col-12">
-                        <div class="card mb-3 mx-auto" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="..." class="img-fluid rounded-start" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container-fluid we-provide mb-4">
-                <div class="container">
-                    <div class="row gx-0">
-                        <div class="col-md-6">
-                            <div class="image-holder"></div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="content-area-os p-5">
-                                <div class="heading-os">
-                                    we provide the best business services
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis aliquid,
-                                    exercitationem explicabo tenetur iste a vel. Provident pariatur nostrum autem ullam
-                                    quam recusandae. <a href=""><span style="color: red;">read more.</span></a></p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed numquam ea pariatur
-                                    officiis enim architecto!</p>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-    </section>
-
-    <!--Section4 training-->
-    <section id="training">
-        <div class="container-fluid pt-4">
-            <div class="container">
-                <h1>get trained at the pitch today</h1>
-            </div>
         </div>
-        <div class="container-fluid px-0 training position-relative">
-            <div class="container mx-0 position-absolute top-100 start-50 translate-middle training-carousel">
-                <div class="row">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <i class="fas fa-circle active" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                aria-current="true" aria-label="Slide 1"></i>
-                            <i class="fas fa-circle" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></i>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row d-flex justify-content-center course-width">
-                                    <div class="col-4">
-                                        <div class="card mx-auto" style="width: 18rem;">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title one</h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <a href="#" class="card-link">Card link</a>
-                                                <a href="#" class="card-link">Another link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card mx-auto" style="width: 18rem;">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title two</h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <a href="#" class="card-link">Card link</a>
-                                                <a href="#" class="card-link">Another link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card mx-auto" style="width: 18rem;">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title three</h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <a href="#" class="card-link">Card link</a>
-                                                <a href="#" class="card-link">Another link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row d-flex justify-content-around course-width">
-                                    <div class="col-4">
-                                        <div class="card mx-auto" style="width: 18rem;">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title four</h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <a href="#" class="card-link">Card link</a>
-                                                <a href="#" class="card-link">Another link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card mx-auto" style="width: 18rem;">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title five</h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <a href="#" class="card-link">Card link</a>
-                                                <a href="#" class="card-link">Another link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="card mx-auto" style="width: 18rem;">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title six</h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <a href="#" class="card-link">Card link</a>
-                                                <a href="#" class="card-link">Another link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="idea">
+            <div class="container">
+                <div class="row gx-3">
+                    <div class="col-md-5 idea">
+                        <h4>Idea, Product or process alone is not valuable without execution.</h4>
+                        <p>Statistics shows that only about 30% of start ups survive, the 70% have often come to the
+                            realization that intellectual property is not a competitive advantage, they strongly believe
+                            that their ideas are unique and innovative, only to realize that the idea, product or
+                            process
+                            aloni is not valuable without execution. Ideas even though unique, requires
+                            several rounds of customer interview, market survey, alalysis, product iterations before it
+                            becomes a finalized product for sale. This is where we come in.
+                        </p>
                     </div>
+                    <div class="col-md-5"><img src="/img/experienced-Labour.jpg" alt="" width="100%"></div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact-us">
-        <section class="footer bg-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md m-3">
-                        <h4>The pitch community</h4>
-                        <p>Advocating business Intelligence and Excellence</p>
-                        <div class="social-icons">
-    
-                        </div>
-                    </div>
-                    <div class="col-md m-4">
-                        <h4>explore</h4>
-                        <div class="list">
-                            <ul>
-                                <li>About</li>
-                                <li>contact</li>
-                                <li>what we do</li>
-                                <li>plans and pricing</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md m-4">
-                        <h4>legal</h4>
-                        <div class="list">
-                            <ul>
-                                <li>join us</li>
-                                <li>blog</li>
-                                <li>privacy and policy</li>
-                                <li>terms and condition</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md m-4">
-                        <h4>company</h4>
-                        <div class="list">
-                            <ul>
-                                <li>about us</li>
-                                <li>blog</li>
-                                <li>contact</li>
-                                <li>carrers</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md m-4">
-                        <h4>have a question?</h4>
-                        <div class="list">
-                            <ul>
-                                <li>Adenike area</li>
-                                <li>+234 802 933 295</li>
-                                <li>info@thepitchcommunity.com</li>
-                            </ul>
-                        </div>
-                    </div>
+    <section id="testimonial">
+        <div class="container">
+            <h2 class="text-dark text-center mb-5">See what our customers are saying about us</h2>
+            <div class="row">
+                <div class="col-md"></div>
+                <div class="col-md"></div>
+                <div class="col-md"></div>
+            </div>
+        </div>
+    </section>
+    <section id="reach-us">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-2"></div>
+                <div class="col-md-7">
+                    <h2 class="mb-3 text-white">Are You Ready To Do Businss With Us?</h2>
+                    <a class="main-button">Contact Us</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container text-white">
+            <div class="row gx-2">
+                <div class="col-md">
+                    <h4>The Pitch Business Community</h4>
+                    <p class="tagline">Advocating Business Intelligence</p>
+                </div>
+                <div class="col-md">
+                    <h4>Quick links</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">FAQ's</a></li>
+                        <li><a href="">PitchWorks</a></li>
+                        <li><a href="">PitchUp</a></li>
+                        <li><a href="">PitchTraining</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Registration</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <a class="navbar-brand" href="#"><img src="./img/brand/brand-white.png" alt=""></a>
+                    <ul class="mt-2">
+                        <li>
+                            <div>Adenike Area Ogbomoso</div>
+                        </li>
+                        <li>
+                            <div>+234802933295</div>
+                        </li>
+                        <li>
+                            <div>info@thepitchcommunity.com</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-
-
-
-
-
-
-    <script src=" ./js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>
