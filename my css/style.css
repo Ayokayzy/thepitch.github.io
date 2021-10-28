@@ -14,6 +14,7 @@
 :focus {
     outline: 0 !important;
     outline-offset: 0;
+    color: var(--secondary-color) !important;
 }
 
 a,
@@ -70,11 +71,11 @@ custom scrollbar
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--white-color);
+    background: var(--primary-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 /*
@@ -122,11 +123,14 @@ p {
     font-weight: 400;
     line-height: 1.75rem;
     letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .tagline {
     font-size: 21.32px;
     color: var(--text-gray);
+    text-align: start;
 }
 
 .main-button {
@@ -171,12 +175,13 @@ p {
 
 /*Nav area*/
 .navbar-brand img {
-    height: 2.575rem;
+    height: 2.575rem !important;
 }
 
-/* .bg-dark {
-    background: var(--black-color) !important;
-} */
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
 
 .nav-wrap {
     position: fixed;
@@ -236,14 +241,25 @@ Top Banner Design
 
 .top-banner {
     width: 100%;
+    height: 67%;
     background: url(../img/bg.jpg) no-repeat center;
     background-size: cover;
-    padding: 13.875rem 0 9.375rem 8.875rem;
+    /* padding: 13.875rem 0 9.375rem 8.875rem; */
 }
 
 .banner-text {
     width: 400px;
 }
+
+/* .top-banner::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 72%;
+    background: rgba(0, 0, 0, .3)!important;
+    left: 0;
+    top: 0;
+} */
 
 
 /*
@@ -256,7 +272,7 @@ Our-works Section Design
 }
 
 .our-works {
-    padding: 0.987rem 0 0.589rem;
+    padding: 3.987rem 0 .589rem;
 }
 
 .column-card {
@@ -325,7 +341,7 @@ Reach-us section design
 */
 #reach-us {
     background: url(/img/happy-bearded-young-man.jpg) no-repeat top left;
-    background-size: 70%;
+    background-size: cover;
     background-color: #FDA437;
     padding: 5rem 0;
 }
@@ -395,7 +411,7 @@ Contact us page design
     width: auto;
 }
 
-#socials .col-md-6 a {
+#socials .col-lg-6 a {
     padding: 5px;
     /* background: #fafafa; */
     /* margin: 5px; */
@@ -405,11 +421,53 @@ Contact us page design
     color: var(--primary-color);
     border-radius: 8px;
     border: 1px solid var(--secondary-color);
+    margin: 10px 5px;
 }
 
 #socials i {
     color: var(--secondary-color);
     font-size: 37px;
+}
+
+.icons {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: fixed;
+    z-index: 100;
+}
+
+.icons ul {
+    padding: initial;
+}
+
+.icons ul li {
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: var(--white-color);
+    /* background: var(--secondary-color); */
+}
+
+.icons ul li:hover {
+    padding-left: 30px;
+    width: 80px;
+    transition: 0.5sec;
+}
+
+.facebook {
+    background: #3b5998;
+}
+
+.instagram {
+    background: #ff4800;
+}
+
+.twitter {
+    background: #55acee;
 }
 
 
@@ -480,11 +538,16 @@ pitchworks page design
     background: var(--text-gray);
 }
 
+.cd {
+    width: 350px !important;
+    margin-top: 20px;
+}
+
 
 
 /*
 ===============================
-pitchworks page design
+pitchtraining page design
 ===============================
 */
 .pitchtraining-banner {
@@ -509,13 +572,13 @@ pitchworks page design
 }
 
 .course-card {
-    width: 300px;
+    width: 350px;
     height: 330px;
-    padding: 20px 30px;
-    text-align: center;
+    padding: 20px 10px;
     border-radius: 8px;
     margin: 0 30px 30px;
-    overflow-y: hidden;
+    overflow: hidden;
+    text-align: center;
 }
 
 .course-card p {
@@ -556,121 +619,4 @@ pitcexchange page design
 
 
 
-
-
-
-
-/*
-===============================
-About us design
-===============================
-*/
-.about-us {
-    padding: 0 0 5.375rem;
-    background: var(--primary-color);
-}
-
-/*--- counter section --*/
-
-.counter-section {
-    margin: 10rem 0 0;
-    background: var(--primary-color);
-    padding: 1.575rem 0;
-}
-
-.counter-section p {
-    color: var(--white-color);
-    text-transform: capitalize;
-}
-
-/*team section*/
-.item-box img {
-    width: 100%;
-}
-
-.butt {
-    color: var(--text-color);
-}
-
-
-/*
-===============================
-what we do design
-===============================
-*/
-.we-provide {
-    background: var(--primary-color);
-    /* height: 40vh; */
-}
-
-.we-provide .row {
-    /* height: 65vh; */
-    padding: 5px;
-}
-
-.image-holder {
-    background: url(../img/a3185cb3d7b5c8b11779dc4903df7c8c.jpg) no-repeat center;
-    background-size: 100% 100%;
-    height: 100%;
-}
-
-.content-area-os {
-    background: white;
-    width: 100%;
-}
-
-.heading-os {
-    box-shadow: -1px 1px 5px black ;
-    background: var(--white-color);
-    border: 1px solid grey;
-    font-size: 40px;
-    margin-bottom: 15px;
-    font-weight: 800;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    padding: 20px 20px;
-}
-
-/*
-===============================
-our training design
-===============================
-*/
-
-.training {
-    background: url(../img/home-bg.jpg) no-repeat center;
-    background-size: 100%;
-    padding: 10rem 0;
-}
-
-.training-carousel {
-    padding-bottom: 30px;
-    margin-bottom: 50px;
-}
-
-.carousel-indicators {
-    /* position: relative; */
-    top: auto;
-    left: 0;
-    bottom: -70px;
-    height: 30px;
-    
-}
-
-.carousel-indicators .li {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: var(--text-color);
-}
-
-.carousel-indicators .active {
-    background: var(--primary-color);
-}
-
-.footer {
-    margin-top: 20rem;
-    color: var(--text-gray);
-    padding: 10rem 5rem;
-}
 
